@@ -1,0 +1,12 @@
+- hosts: "all"
+  tasks:
+    - name: "Patch Servers"
+      include_role:
+        name: "el7patching"
+      vars:
+        patch_display_patch_output: True
+        patch_pkgs:
+          - "yum"
+          - "httpd"
+        patch_never_reboot: True
+        patch_never_restart_svc: True
