@@ -3,6 +3,7 @@
   service:
     name: "{{ item }}"
     state: "restarted"
+  become: true
   when:
     - 'needs_service_restart.stdout_lines | length > 0'
     - 'needs_reboot.rc != 1'
@@ -12,6 +13,7 @@
 - name: "Reboot after patching"
   reboot:
     msg: "{{ patch_reboot_message | default('Rebooting due to patching.') }}"
+  become: true
   when:
     - 'needs_reboot.rc == 1'
     - 'not patch_never_reboot'

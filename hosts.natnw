@@ -1,0 +1,1 @@
+127.0.0.1 ansible_user=osboxes ansible_ssh_extra_args='-p 2222'

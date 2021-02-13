@@ -6,7 +6,35 @@
       vars:
         patch_display_patch_output: True
         patch_pkgs:
-          - "yum"
+          - "nss"
+          - "nspr"
+          - "java-1.8.0-openjdk"
           - "httpd"
-        patch_never_reboot: True
-        patch_never_restart_svc: True
+          - "python3"
+          - "glibc"
+          - "cups"
+          - "perl"
+          - "bind"
+          - "libxml2"
+          - "expat"
+          - "glib2"
+          - "ibus"
+          - "libpng"
+          - "curl"
+          - "sudo"
+          - "subversion"
+          - "NetworkManager"
+          - "libssh2"
+          - "libtiff"
+          - "e2fsprogs"
+          - "cpio"
+          - "openldap"
+          - "freetype"
+          - "libX11"
+          - "libcroco"
+          - "python"
+          - "openssl"
+          - "linux-firmware"
+          - "kernel"
+        patch_never_reboot: False
+        patch_never_restart_svc: False
