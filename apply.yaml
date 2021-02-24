@@ -49,6 +49,7 @@
           - "perl-macros"
           - "perl-Module-CoreList"
           - "perl-Pod-Escapes"  
+          - "perl-CPAN"
           - "bind-export-libs"
           - "iwl105-firmware"
           - "iwl135-firmware"
